@@ -26,7 +26,7 @@ private AccommodationType type;
   - 참고 자료 : https://namocom.tistory.com/892
 
 - 동작방법을 확인하는 방법중에 로그스택을 따라가면서 구현체들을 하나씩 보는 방법이 있다는 것을 알았다.
-- 블로그의 글을 보면서 중간에 나온 `ValueExtractor` 클래스는 갑자기 어떻게 나왔는지는 모르겠지만 ResertSet에서 추출하는 역할을 하는 클래스로 보인다. 
+- 블로그의 글을 보면서 중간에 나온 `ValueExtractor` 클래스는 갑자기 어떻게 나왔는지는 모르겠지만 ResultSet에서 추출하는 역할을 하는 클래스로 보인다. 
 - 그렇게 따라가다가 `JdbcTypeJavaClassMappings` 클래스를 보았고, 해당 클래스가 JDBC type과 Java Class를 매핑해주는 거 같았다. `buildJavaClassToJdbcTypeCodeMappings()` 메서드를 확인해보니 아래처럼 어떤 jdbc를 어떤 자바 타입으로 바꿔주는 것인지 맵이 나왔다. 
 
 ```java
